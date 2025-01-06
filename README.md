@@ -50,6 +50,16 @@
 - bitbake core-image-full-cmdline
 - or bitbake core-image-full-cmdline -c cleanall && bitbake core-image-full-cmdline
 
+# Prepare SD card
+- ls -ltr /dev/ | grep -i sd (to see the sd status)
+- sudo dd if=/dev/zero of=/dev/sd{disk} bs=1M count=16 (to remove partition)
+- sudo cfdisk /dev/sd{disk}, setect DOS, select new, 128M (1st partition), Type=(e)FAT16, Bootable (to form 1st partition)
+- select new, Type=(83)Linux, write=yes, quit (to form 2nd partition)
+- cat /proc/partitions | grep sd{disk} to view partition
+- sudo mkfs.vfat -F 32 -n BOOT /dev/sd{disk}1  (to format partition1)
+- sudo mkfs.ext4 -L rootfs -E nodiscard /div/sd{disk}2
+
+
 
 
 
