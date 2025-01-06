@@ -1,9 +1,9 @@
 #Commands used in git:
-#git clone ${repositories path} (to copy all files from repositories}
-#git checkout -b ${branch} (to checkout and go to the branch)
+#git clone $(repositories path) (to copy all files from repositories}
+#git checkout -b $(branch) (to checkout and go to the branch)
 #git branch (to show the current branch)
 #git status (to show the current status)
-#git add . or git add ${filenames}
+#git add . or git add $(filenames)
 #git commit -m " description "
 #git push
 #git fetch && git pull (to sync the files in a git repository)
