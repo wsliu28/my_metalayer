@@ -38,10 +38,17 @@
 - IMAGE_INSTALL:append = " sysdtest"
 
 
-Add development libraries in /usr/lib:
-EXTRA_IMAGE_FEATURES += "tools-sdk"
-EXTRA_IMAGE_FEATURES += "tools-debug"
+# Add development libraries in /usr/lib:
+- EXTRA_IMAGE_FEATURES += "tools-sdk"
+- EXTRA_IMAGE_FEATURES += "tools-debug"
 
+# Setup for yocto project
+- sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint xterm python3-subunit mesa-common-dev zstd liblz4-tool
+- git clone -b kirkstone git://git.yoctoproject.org/poky.git
+- cd poky; source oe-init-build-env build
+- sudo nano conf/local.conf
+- bitbake core-image-full-cmdline
+- or bitbake core-image-full-cmdline -c cleanall && bitbake core-image-full-cmdline
 
 
 
