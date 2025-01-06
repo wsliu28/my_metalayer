@@ -17,6 +17,9 @@
 
 # SDK:
 - bitbake -c do_populate_sdk core-image-full-cmdline
+- go to ....tmp/deploy/sdk
+- ./poky-glibc-x86_64-core-image-full-cmdline-cortexa8hf-neon-beaglebone-yocto-toolchain-4.0.23.sh
+
 
 
 # sysd config added in local.conf:
