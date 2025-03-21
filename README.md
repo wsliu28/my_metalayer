@@ -61,7 +61,7 @@
 - select new, Type=(83)Linux, write=yes, quit (to form 2nd partition)
 - cat /proc/partitions | grep sd{disk} to view partition
 - sudo mkfs.vfat -F 32 -n BOOT /dev/sd{disk}1  (to format partition1)
-- sudo mkfs.ext4 -L ROOTFS -E nodiscard /dev/sd{disk}2 (to format partition2) or sudo mkfs.ext4 -L ROOTFS -E nodiscard /dev/sd{disk}2 (to format partition2)
+- sudo mkfs.ext3 -L ROOTFS -E nodiscard /dev/sd{disk}2 (to format partition2) or sudo mkfs.ext4 -L ROOTFS -E nodiscard /dev/sd{disk}2 (to format partition2)
 
 
 
