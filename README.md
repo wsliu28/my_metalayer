@@ -63,7 +63,8 @@
 - sudo mkfs.vfat -F 32 -n BOOT /dev/sd{disk}1  (to format partition1)
 - sudo mkfs.ext3 -L ROOTFS -E nodiscard /dev/sd{disk}2 (to format partition2) or sudo mkfs.ext4 -L ROOTFS -E nodiscard /dev/sd{disk}2 (to format partition2)
 
-
+# Command to check the linux version
+- lsb_release -da
 
 
 
