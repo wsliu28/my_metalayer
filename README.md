@@ -69,6 +69,7 @@
 - lsmod or lsmod | grep {driver name} (list a driver in the kernel)
 - sudo dmesg | tail
 - sudo dmesg -w (to see the new coming kernel log)
+- sudo mknod {driver_interface_name} maj_num min_num (make a interface node to a driver)
 - 
 
 
