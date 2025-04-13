@@ -65,6 +65,8 @@
 
 # Linux Commands
 - lsb_release -da (check linux version)
+- modinfo {driver name}.ko (display a driver details)
+- 
 
 
 
