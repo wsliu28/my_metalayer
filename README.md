@@ -67,6 +67,7 @@
 - lsb_release -da (check linux version)
 - modinfo {driver name}.ko (display a driver details)
 - lsmod or lsmod | grep {driver name} (list a driver in the kernel)
+- sudo dmesg | tail
 - 
 
 
