@@ -68,6 +68,7 @@
 - modinfo {driver name}.ko (display a driver details)
 - lsmod or lsmod | grep {driver name} (list a driver in the kernel)
 - sudo dmesg | tail
+- sudo dmesg -w (to see the new coming kernel log)
 - 
 
 
