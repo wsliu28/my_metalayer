@@ -71,7 +71,8 @@
 - sudo dmesg -w (to see the new coming kernel log)
 - sudo mknod {driver_interface_name} c maj_num min_num (make a interface node to a driver, eg. sudo mknod /dev/mydevice c 90 0)
 - ls -al /dev/tty* (to list the dev/tty* with major and minar numbers)
-- cat /proc/devices (to display drivers with major numbers e.g., cat /proc/device | grep my_dev_nr) 
+- cat /proc/devices (to display drivers with major numbers e.g., cat /proc/device | grep my_dev_nr)
+- uname -a (to display the os version 64/32 bit)
 
 
 
