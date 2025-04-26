@@ -73,6 +73,7 @@
 - ls -al /dev/tty* (to list the dev/tty* with major and minar numbers)
 - cat /proc/devices (to display drivers with major numbers e.g., cat /proc/device | grep my_dev_nr)
 - uname -a (to display the os version 64/32 bit)
+- lsblk (list blick devices)
 
 
 
